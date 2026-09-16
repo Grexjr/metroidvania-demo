@@ -4,7 +4,7 @@ extends CharacterBody2D
 signal hit
 
 @export var speed = 400
-@export var jump_velocity = -400
+@export var jump_velocity = -500
 var screen_size
 
 
@@ -15,11 +15,7 @@ func _ready() -> void:
 	hide()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-	
-		
+# Called every frame. 'delta' is the elapsed time since the previous frame. For physics objects
 func _physics_process(delta: float) -> void:
 	# Apply gravity automatically if player is in the air
 	if not is_on_floor():
@@ -29,7 +25,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
 	
-	# Get horizontal input movement
+	# Get horizontal input movement (direction becomes boolean it seems)
 	var direction := Input.get_axis("move_left","move_right")
 	if direction:
 		velocity.x = direction * speed
@@ -39,7 +35,7 @@ func _physics_process(delta: float) -> void:
 	# Move character using velocities
 	move_and_slide()
 	
-	# Animation
+	# Animation - if velocity is not zero, play walk animation and flip if neg
 	if velocity.x != 0:
 		$AnimatedSprite2D.play("walk")
 		$AnimatedSprite2D.flip_h = velocity.x < 0
