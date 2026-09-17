@@ -8,12 +8,22 @@ var score
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$Player.start($StartPosition.position)
+	$Player.set_camera_bounds(get_room_bounds())
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
+# Hint to return Rect2
+func get_room_bounds() -> Rect2:
+	# Get the rectangle shape you used
+	var shape: RectangleShape2D = $Bounds/CollisionShape2D.shape
+	# Gets the positioning of top left, minus the extents (?)
+	var top_left = $Bounds/CollisionShape2D.global_position - shape.extents
+	var bounds = Rect2(top_left,shape.extents * 2)
+	print("Room bounds: ", bounds)
+	return Rect2(top_left,shape.extents * 2)
 
 func game_over() -> void:
 	$HUD.show_game_over()

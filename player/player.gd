@@ -50,6 +50,14 @@ func start(pos):
 	show()
 	$CollisionShape2D.disabled = false
 	
+# Takes in bounds, with type hint that it is a rect2 and returns void
+func set_camera_bounds(bounds: Rect2) -> void:
+	# Gets the position of the bounds, adds width and height for other side
+	$Camera2D.limit_left = bounds.position.x
+	$Camera2D.limit_right = bounds.position.x + bounds.size.x
+	$Camera2D.limit_top = bounds.position.y
+	$Camera2D.limit_bottom = bounds.position.y + bounds.size.y
+	
 
 
 func _on_body_entered(body: Node2D) -> void:
