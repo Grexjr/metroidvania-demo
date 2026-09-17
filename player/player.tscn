@@ -46,3 +46,5 @@ animation = &"jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169772424]
 shape = SubResource("CapsuleShape2D_b26j0")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1871203397]
