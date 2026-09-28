@@ -19,3 +19,5 @@ script = ExtResource("1_pmtbo")
 [node name="Tiles" type="TileMapLayer" parent="." unique_id=811287701]
 tile_set = SubResource("TileSet_6oi0v")
 metadata/_edit_group_ = true
+
+[node name="SpawnDefault" type="Marker2D" parent="." unique_id=1027716906]
