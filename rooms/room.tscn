@@ -13,7 +13,7 @@ texture = ExtResource("2_ya37f")
 [sub_resource type="TileSet" id="TileSet_6oi0v"]
 sources/0 = SubResource("TileSetAtlasSource_sdog0")
 
-[node name="Room" type="Node" unique_id=567538697]
+[node name="Room" type="Node2D" unique_id=196433205]
 script = ExtResource("1_pmtbo")
 
 [node name="Tiles" type="TileMapLayer" parent="." unique_id=811287701]
