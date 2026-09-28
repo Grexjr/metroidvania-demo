@@ -10,7 +10,10 @@ var screen_size
 
 # Called when the node enters the scene tree for the first time.d
 func _ready() -> void:
+	# Get screen size
 	screen_size = get_viewport_rect().size
+	# Add player to group player
+	add_to_group("player")
 	# Player hidden when game starts
 	hide()
 

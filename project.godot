@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="Metroidvania DEMO"
 
+[global_group]
+
+player="The Player"
+
 [input]
 
 move_right={

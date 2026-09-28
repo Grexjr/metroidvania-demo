@@ -15,7 +15,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_sweqy")
 }],
-"loop": true,
+"loop": 1,
 "name": &"jump",
 "speed": 5.0
 }, {
@@ -26,7 +26,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("4_1jxqw")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 5.0
 }]
@@ -35,7 +35,7 @@ animations = [{
 radius = 27.0
 height = 68.0
 
-[node name="Player" type="CharacterBody2D" unique_id=863065171]
+[node name="Player" type="CharacterBody2D" unique_id=863065171 groups=["player"]]
 script = ExtResource("1_sweqy")
 metadata/_edit_group_ = true
 

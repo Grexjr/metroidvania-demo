@@ -13,3 +13,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+# Function called when player enters the load zone bounds
+func _on_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
