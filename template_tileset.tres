@@ -1,0 +1,16 @@
+[gd_resource type="TileSet" format=3 uid="uid://qdd17hrvina4"]
+
+[ext_resource type="Texture2D" uid="uid://2vd0hgmxm1to" path="res://art/MetroidvaniaV1Tileset-Sheet.png" id="1_yvsa6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
+texture = ExtResource("1_yvsa6")
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+
+[resource]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_lquwl")

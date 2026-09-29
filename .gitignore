@@ -23,4 +23,5 @@ Thumbs.db
 exports/
 builds/
 
-
+# CUSTOM
+additions.txt

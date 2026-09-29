@@ -10,9 +10,12 @@ var screen_size
 
 # Called when the node enters the scene tree for the first time.d
 func _ready() -> void:
+	# Get screen size
 	screen_size = get_viewport_rect().size
-	# Player hidden when game starts
-	hide()
+	# Add player to group player
+	add_to_group("player")
+	# Show player to start
+	show()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame. For physics objects
