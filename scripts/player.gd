@@ -14,8 +14,8 @@ func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	# Add player to group player
 	add_to_group("player")
-	# Player hidden when game starts
-	hide()
+	# Show player to start
+	show()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame. For physics objects

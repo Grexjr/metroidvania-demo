@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://o2a6evgd5dkd"]
 
-[ext_resource type="Script" uid="uid://cj44k5gvg48u" path="res://objects/load_zone.gd" id="1_sai8e"]
+[ext_resource type="Script" uid="uid://cj44k5gvg48u" path="res://scripts/load_zone.gd" id="1_gajtb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djcam"]
 
 [node name="Area2D" type="Area2D" unique_id=2064408483 groups=["player"]]
-script = ExtResource("1_sai8e")
+script = ExtResource("1_gajtb")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=88465662]
